@@ -1,0 +1,50 @@
+.header {
+    &__title {
+        text-align: center;
+        font-weight: 500;
+        font-size: 50px;
+    }
+    &__filters {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    &__filters-title {
+        text-align: center;
+    }
+    &__filters-buttons {
+        display: flex;
+        justify-content: center;
+    }
+    &__sort {
+        margin-bottom: 20px;
+    }
+    &__sort-title {
+        text-align: center;
+    }
+    &__sort-buttons {
+        display: flex;
+        justify-content: center;
+    }
+    &__filters-button,
+    &__sort-button,
+    &__add-todo-button {
+        min-width: 50px;
+        color: #6c757d;
+        background-color: transparent;
+        background-image: none;
+        padding: 10px 10px;
+        border: 1px solid #6c757d;
+        border-radius: 5px;
+        margin-right: 10px;
+        transition: .4s linear;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            background-color: #6c757d;
+            color: white;
+        }
+    }
+}

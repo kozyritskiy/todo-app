@@ -1,0 +1,91 @@
+.list-item {
+    padding: 15px 15px;
+    border: 1px solid #6c757d;
+    &:first-child {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    &:last-child {
+        border-bottom-left-radius: 5ps;
+        border-bottom-right-radius: 5px;
+    }
+}
+
+.property {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    &__priority{
+        margin-right: 10px;
+    }
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    &__avatar {
+        &-wrap {
+            width: 100px;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 70px;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin-right: 15px;
+        margin: 0 auto;
+        
+    }
+    &__info {
+        width: 100%;
+    }
+    &__control {
+        display: flex;
+        flex-direction: column;
+        &-button {
+            padding: 5px 10px;
+            margin-bottom: 5px;
+            background-color: transparent;
+            border-radius: 5px;
+            &_delete {
+                border: 1px solid red;
+                transition: .3s linear;
+                &:hover {
+                    background-color: red;
+                }
+                &:hover .fas {
+                    color: white;
+                }
+            }
+            &_delete .fas {
+                color: red;
+            }
+            &_done {
+                border: 1px solid green;
+                transition: .3s linear;
+                &:hover {
+                    background-color: green;
+                }
+                &:hover .fas {
+                    color: white;
+                }
+            }
+            &_done .fas {
+                color: green;
+            }
+            &_edit {
+                border: 1px solid black;
+                transition: .3s linear;
+                &:hover {
+                    background-color: black;
+                }
+                &:hover .fas {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
